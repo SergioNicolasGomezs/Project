@@ -18,12 +18,13 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+/*reset page parameters*/
 
 body{
     background-color: #3D3B39;
 }
 
-
+/*header styles*/
 .header_img{
     background: linear-gradient(rgba(75,123,97, 33%),rgba(75,123,97, 33%)) , url(imagenes_programacion/header_imagen.jpg);
     background-repeat:no-repeat;
@@ -41,48 +42,60 @@ body{
     top: 40%;
 }
 
+/*header styles*/
+
+/*main styles*/
+
 .img_main{
     width: 50%;
     box-shadow: 30px 4px 4px rgba(0, 0, 0, 25%);
     float: left;
-    margin-right: 55px;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    max-width: 100%;
     
 
 }
+
 
 .titulo_main{
     color: #ffff;
     font-family: 'Alata', sans-serif;
     font-size: 36px;
     padding: 0px 0px 52px 0px;
+    font-weight: bold;
 }
 
 p{
     color: #ffff;
     font-family: 'Alata', sans-serif;
     font-size: 20px;
+    
 }
 
 .wrapper{
-    padding: 200px 0px 200px 100px;
+    padding-top: 10%;
+    padding-bottom: 10%;
     margin: 20px 20px auto;
     width: 50%;
+    margin-left: 220px;
 }
 
 .content{
     margin: 10px 1000px 10px 190px;
-    padding: 20px 10px 10px 100px;
-    width: 1200px;
-    height: 400px;
+    width: 120%;
+    height: 40%;
     text-align: center;
 }
 
+/*main styles*/
+
+/*nav styles*/
 
 .container_menu{
-    width: 144.3vh;
+    width: 100%;
     height: 50px;
     background: #ffff;
-    padding: 0px 279.6px;
     margin: 0px;
     position: sticky;
     top: 0;
@@ -92,6 +105,11 @@ p{
     max-width: 1200px;
     margin: 0px 290px;
     height: 100%;
+}
+
+.menu_list{
+    display: flex;
+    justify-content: space-around;
 }
 
 nav{
@@ -115,7 +133,7 @@ nav > ul > li > a{
     display: flex;
     align-items: center;
     margin: 5px 5px 5px 5px;
-    padding: 0px 30px 0px 120px;
+    padding: 0px 30px 0px 30px;
     text-transform: uppercase;
     font-size: 16px;
     text-decoration: none;
@@ -132,15 +150,16 @@ nav > ul > li > a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+/*hide submenu */
 nav ul li ul{
-    width: 135%;
+    width: 110%;
     display: flex;
     flex-direction: column;
     background: #ffff;
     border-radius:0px 0px 5px 5px;
     position: absolute;
     top: 40px;
-    left: -10px;
+    left: -5px;
     padding: 0px 0px 0px 6px;
     visibility: hidden;
     opacity: 0;
@@ -148,12 +167,17 @@ nav ul li ul{
     z-index: 10;
     transition: all 300ms ease;
 }
+/*hide submenu */
 
+/*Hovering the cursor over the content shows the dropmenu*/
 nav ul li:hover ul{
     visibility: visible;
     opacity: 1;
     top: 50px;
 }
+/*Hovering the cursor over the content shows the dropmenu*/
+
+/*styles nav*/
 
 nav ul li ul li a{
     display: flex;
@@ -176,6 +200,10 @@ nav ul li ul li a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+/*styles nav*/
+
+
+/*footer styles*/
 
 footer{
     background: #ffff;
@@ -186,6 +214,12 @@ footer{
     margin: auto;
     padding: 0px 0 0px 0px;
 }
+
+/*footer styles*/
+
+
+/*styles of the footer of the networks  */
+
 
 #footer_text{
     color: #000000;
@@ -244,3 +278,68 @@ footer{
     transform: scale(1.1);
 }
 
+/*styles of the footer of the networks  */
+
+/*responsive styles*/
+
+@media screen and (max-width:768px){
+
+    .titulo_main{
+
+        padding: 0px 0px 52px 300px;
+    }
+
+    .img_main{
+        width: 100%;
+        float: inline-end;
+        margin-right: 0;
+        margin-bottom: 220px;
+    }
+    
+    .wrapper{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+    p {
+        font-size: 20px;
+        width: 50%
+    }
+
+    #footer_text{
+        padding: 10px 0 10px 200px;
+    }
+
+    #gmail_logo{
+        width: 4%;
+        padding: 30px 10px 5px 50px;
+        transition: all 300ms ease;
+    }
+    
+    #in_logo{
+        width: 4%;
+        padding: 30px 10px 5px 50px;
+        transition: all 300ms ease;
+    }
+    
+    #instagram_logo{
+        width: 4%;
+        padding: 30px 10px 5px 50px;
+        transition: all 300ms ease;
+    }
+    
+    #twitter_logo{
+        width: 4%;
+        padding: 30px 10px 5px 50px;
+        transition: all 300ms ease;
+    }
+    
+    #telefono_logo{
+        width: 4%;
+        padding: 30px 10px 5px 50px;
+        transition: all 300ms ease;
+    }
+}
+
+/*responsive styles*/
