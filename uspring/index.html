@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/ProyectoMintash/uspring/reset.css" />
-    <link rel="stylesheet" href="/ProyectoMintash/uspring/styless.css" />
+    <link rel="stylesheet" href="/ProyectoMintash/uspring/css/reset.css" />
+    <link rel="stylesheet" href="/ProyectoMintash/uspring/css/styless.css" />
     <title>project form</title>
   </head>
   <body>
@@ -42,7 +42,7 @@
           </div>
           <div class="form_group">
             <input
-              type="password"
+              type="text"
               id="password"
               class="form_input"
               placeholder=""
@@ -58,7 +58,9 @@
         </div>
         <!--created form-->
         <!--created submit button-->
-        <input type="submit" class="form_submit" value="Enviar" />
+        <button type="submit" class="form_submit" onclick="save()">
+          Enviar
+        </button>
         <!--created submit button-->
       </form>
     </main>
@@ -98,4 +100,13 @@
       <!--footer content-->
     </footer>
   </body>
+  <!--import my js-->
+  <script src="/ProyectoMintash/uspring/js/config.js"></script>
+  <script src="/ProyectoMintash/uspring/js/save.js"></script>
+  <!--import my js-->
+  <!--import firebase-->
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+  <!--import firebase-->
 </html>
