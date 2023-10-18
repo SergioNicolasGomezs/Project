@@ -31,38 +31,32 @@
       <!--nav menu-->
 
       <!--created form-->
-      <form action="" method="post">
+      <form action="" id="contactForm" method="post">
         <h2 class="form_title">Deja tu expe</h2>
 
         <div class="form_container">
           <div class="form_group">
-            <input type="text" id="user" class="form_input" placeholder="" />
+            <input type="text" id="usuario" class="form_input" placeholder="" />
             <label for="user" class="form_label">Usuario</label>
             <span class="form_line"></span>
           </div>
           <div class="form_group">
-            <input
-              type="text"
-              id="password"
-              class="form_input"
-              placeholder=""
-            />
+            <input type="text" id="contra" class="form_input" placeholder="" />
             <label for="password" class="form_label">Contraseña</label>
             <span class="form_line"></span>
           </div>
           <div class="form_group">
             <input type="text" id="coment" class="form_input" placeholder="" />
-            <label for="coment" class="form_label">Comentario</label>
+            <label for="comentario" class="form_label">Comentario</label>
             <span class="form_line"></span>
           </div>
         </div>
         <!--created form-->
         <!--created submit button-->
-        <button type="submit" class="form_submit" onclick="save()">
-          Enviar
-        </button>
+        <button type="submit" class="form_submit">Enviar</button>
         <!--created submit button-->
       </form>
+      <!--I create a div to show the experience data-->
     </main>
     <footer>
       <!--footer content-->
@@ -100,13 +94,4 @@
       <!--footer content-->
     </footer>
   </body>
-  <!--import my js-->
-  <script src="/ProyectoMintash/uspring/js/config.js"></script>
-  <script src="/ProyectoMintash/uspring/js/save.js"></script>
-  <!--import my js-->
-  <!--import firebase-->
-  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
-  <!--import firebase-->
 </html>
