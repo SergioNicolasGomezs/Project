@@ -297,7 +297,14 @@ footer{
     }
 /*estilos de los contenidos*/
     .content{
-        margin: 10px 1000px 10px 150px
+        margin: 10px 1000px 10px 150px;
+        width: 60%;
+        
+    }
+
+    div p {
+        padding-left: 40px;
+        width: 100%;
     }
     
     .wrapper{
@@ -347,3 +354,31 @@ footer{
 }
 
 /*responsive styles*/
+
+@media screen and (max-width:412px){
+
+    .titulo_main{
+
+        padding: 0px 0px 52px 300px;
+    }
+
+
+
+    .img_main{
+        width: 100%;
+        float: inline-end;
+        margin-right: 0;
+        margin-bottom: 220px;
+    }
+
+    .content{
+        margin: 10px 1000px 10px 150px;
+        width: 60%;
+        
+    }
+
+    div p {
+        padding-left: 40px;
+        width: 100%;
+    }
+}
