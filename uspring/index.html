@@ -32,7 +32,7 @@
 
       <!--created form-->
       <form action="" id="contactForm" method="post">
-        <h2 class="form_title">Deja tu expe</h2>
+        <h2 class="form_title">Tu Experiencia</h2>
 
         <div class="form_container">
           <div class="form_group">
@@ -41,7 +41,12 @@
             <span class="form_line"></span>
           </div>
           <div class="form_group">
-            <input type="text" id="contra" class="form_input" placeholder="" />
+            <input
+              type="password"
+              id="contra"
+              class="form_input"
+              placeholder=""
+            />
             <label for="password" class="form_label">Contraseña</label>
             <span class="form_line"></span>
           </div>
@@ -53,10 +58,11 @@
         </div>
         <!--created form-->
         <!--created submit button-->
-        <button type="submit" class="form_submit">Enviar</button>
+        <button type="submit" id="btnAgregar" class="form_submit">
+          Enviar
+        </button>
         <!--created submit button-->
       </form>
-      <!--I create a div to show the experience data-->
     </main>
     <footer>
       <!--footer content-->
@@ -93,5 +99,6 @@
       <p id="footer_text">© Sergio Nicolas Gomez</p>
       <!--footer content-->
     </footer>
+    <script src="./js/config.js"></script>
   </body>
 </html>
