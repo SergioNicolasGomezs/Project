@@ -8,7 +8,7 @@ body{
 /*header styles*/
 
 .header_img{
-    background: linear-gradient(rgba(75,123,97, 33%),rgba(75,123,97, 33%)) , url(../../imagenes_programacion/header_imagen.jpg);
+    background: linear-gradient(rgba(75,123,97, 33%),rgba(75,123,97, 33%)) , url(../img/header_imagen.jpg);
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:cover;
