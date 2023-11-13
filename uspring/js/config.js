@@ -10,12 +10,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     if (user === '' || password === '') {
         alert('Por favor, completa todos los campos');
       } else {
-        // Si los campos están completos, puedes hacer algo aquí, como enviar el formulario o realizar otras acciones.
-        // Por ahora, solo mostramos un mensaje de éxito.
+        // Si los campos están completos, muestra un mesaje de exito
         alert('Formulario enviado con éxito');
       }
 
-    // Puedes hacer lo que quieras con las variables, por ejemplo, mostrarlas en la consola
+    // mostrar los datos en la consola
     console.log("usuario: " + user);
     console.log("contra: " + password);
     console.log("coment: " + comment);
