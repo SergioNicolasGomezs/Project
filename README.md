@@ -25,7 +25,6 @@ Proximamente se agregara una tabla que guarde tanto las quejas como recomendacio
 <ul>
 <li>HTML</li>
 <li>CSS</li>
-<li>JS<li>
 </ul>
 
 
